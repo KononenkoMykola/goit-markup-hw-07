@@ -7,7 +7,8 @@
     line-height: 1.19;
     margin-top: 0;
     margin-bottom: 0;
-  }
-  .logo__web {
+  
+  &__web {
     color: var(--accent-color);
   }
+}

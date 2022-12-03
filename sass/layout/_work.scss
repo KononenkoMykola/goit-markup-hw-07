@@ -1,24 +1,24 @@
 .work {
     padding-bottom: 94px;
-  }
-  .work__title {
+  
+  &__title {
     color: var(--title-text-color);
     margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
   }
-  .work__list {
+  &__list {
     display: flex;
   }
-  .work__item {
+  &__item {
     width: calc((100% - 30px) / 3);
     position: relative;
   }
-  .work__item + .work__item {
+  &__item + &__item {
     margin-left: 30px;
   }
-  .work__desk {
+  &__desk {
     color: var(--secondary-title-text-color);
     font-weight: 700;
     font-size: 14px;
@@ -28,7 +28,7 @@
     text-transform: uppercase;
   }
   
-  .work__apps {
+  &__apps {
     position: absolute;
     width: 370px;
     height: 70px;
@@ -38,3 +38,4 @@
     padding-top: 27px;
     padding-bottom: 27px;
   }
+}

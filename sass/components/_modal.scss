@@ -32,13 +32,13 @@
     align-items: center;
     padding: 8px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .modal__close-icon {
+  
+  &__close-icon {
     width: 100%;
     height: 100%;
   }
   
-  .modal__close {
+  &__close {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -53,10 +53,10 @@
     align-items: center;
     cursor: pointer;
   }
-  .modal__form {
+  &__form {
     padding: 40px;
   }
-  .modal__text {
+  &__text {
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
@@ -65,7 +65,7 @@
     color: var(--title-text-color);
     margin-bottom: 12px;
   }
-  .modal__input {
+  &__input {
     width: 100%;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -74,12 +74,12 @@
     padding-left: 42px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .modal__input:focus,
-  .modal__textarea:focus {
+  &__input:focus,
+  &__textarea:focus {
     border: 1px solid var(--accent-color);
     outline: transparent;
   }
-  .modal__lable {
+  &__lable {
     display: inline-block;
     width: 100%;
     margin-bottom: 4px;
@@ -88,21 +88,22 @@
     line-height: 1.17;
     letter-spacing: 0.01em;
   }
-  .modal__textarea {
+  &__textarea {
     width: 100%;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     resize: none;
     padding: 12px 16px;
-  }
-  .modal__textarea::placeholder {
+  
+  &::placeholder {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
   }
-  .modal__button {
+}
+  &__button {
     width: 200px;
     height: 50px;
     background: #188ce8;
@@ -121,12 +122,12 @@
     text-align: center;
     margin: auto;
   }
-  .modal__checkbox {
+  &__checkbox {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  .modal__checkbox::before {
+  
+  &::before {
     content: " ";
     display: flex;
     margin-right: 8px;
@@ -136,30 +137,31 @@
     border-radius: 2px;
     cursor: pointer;
   }
-  .modal__check input:checked + .modal__checkbox::before {
+}
+  &__check input:checked + &__checkbox::before {
     background-color: #2196f3;
     border: none;
     background-image: url(../images/check-mark.svg);
     background-repeat: no-repeat;
     background-position: center;
   }
-  .modal__link {
+  &__link {
     color: var(--accent-color);
   }
-  .modal__agreement {
+  &__agreement {
     font-size: 14px;
     line-height: 1.71px;
     letter-spacing: 0.03em;
   }
-  .modal__check {
+  &__check {
     margin-top: 20px;
     margin-bottom: 30px;
   }
-  .modal__wrapper {
+  &__wrapper {
     position: relative;
     margin-bottom: 10px;
   }
-  .modal__icon {
+  &__icon {
     position: absolute;
     width: 18px;
     height: 18px;
@@ -170,9 +172,10 @@
     fill: var(--title-text-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .modal__textarea {
+  &__textarea {
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .modal__input:focus + .modal__icon {
+  &__input:focus + &__icon {
     fill: var(--accent-color);
   }
+}

@@ -1,18 +1,18 @@
 .features {
     padding-top: 94px;
     padding-bottom: 94px;
-  }
-  .features__list {
+  
+  &__list {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     display: flex;
     justify-content: center;
   }
-  .features__item + .features__item {
+  &__item + &__item {
     margin-left: 30px;
   }
-  .features__title {
+  &__title {
     color: var(--title-text-color);
     font-size: 14px;
     line-height: 1.14;
@@ -20,7 +20,7 @@
     text-transform: uppercase;
   }
   
-  .features__icons {
+  &__icons {
     width: 270px;
     height: 120px;
     background-color: var(--third-background-color);
@@ -30,3 +30,4 @@
     align-items: center;
     display: flex;
   }
+}
